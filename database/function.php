@@ -21,13 +21,6 @@ function registrasi ($data){
     $username = stripcslashes($data['username']);
     $email = $data['email'];
     $password = mysqli_real_escape_string($koneksi, $data['password']);
-    $password2 = mysqli_real_escape_string($koneksi, $data['password2']);
-
-    // Cek Konfirmasi password
-    if ($password !== $password2){
-        echo "<script>alert('Konfirmasi password tidak sesuai')</script>";
-        return 0;
-    }
 
     // Enkripsi password
     $password = password_hash($password, PASSWORD_DEFAULT);
