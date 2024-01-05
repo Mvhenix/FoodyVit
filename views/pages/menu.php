@@ -50,7 +50,8 @@ require '../../database/function.php';
           <a class="nav-link active" href="./service.php">Service</a>
           <a class="nav-link active" href="./contactus.php">Contact Us</a>
         </div>
-        <div class="drop-down">
+      </div>
+      <div class="drop-down">
           <div class="container">
             <!-- Btn-->
             <button class="btnaccount"><span><?= $username; ?></span>
@@ -65,7 +66,6 @@ require '../../database/function.php';
             </button>
           </div>
         </div>
-      </div>
     </div>
   </nav>
   <!-- Akhir Navbar -->
